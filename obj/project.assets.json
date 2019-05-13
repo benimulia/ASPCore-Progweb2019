@@ -12127,11 +12127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCoreVSCodeB-master\\ASPCoreGroupB.csproj",
+      "projectUniqueName": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCore\\ASPCoreGroupB.csproj",
       "projectName": "ASPCoreGroupB",
-      "projectPath": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCoreVSCodeB-master\\ASPCoreGroupB.csproj",
+      "projectPath": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCore\\ASPCoreGroupB.csproj",
       "packagesPath": "C:\\Users\\benimulia\\.nuget\\packages\\",
-      "outputPath": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCoreVSCodeB-master\\obj\\",
+      "outputPath": "D:\\!KULIAH\\!Semester 4\\Tugas\\Pemrograman Web\\ASPCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
