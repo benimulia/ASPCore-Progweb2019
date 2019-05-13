@@ -1,6 +1,7 @@
 using System;
 using ASPCoreGroupB.DAL;
 using ASPCoreGroupB.Models;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ASPCoreGroupB.Controllers{
@@ -28,6 +29,19 @@ namespace ASPCoreGroupB.Controllers{
             return View("Index",data);
         }
 
+        [HttpPost]
+        public IActionResult SearchAll(string keyword, string pilih){
+            IEnumerable<Dosen> data;
+            if (pilih=="Nik")
+            {
+                data = _dsn.GetAllByNik(keyword);
+            }else
+            {
+                data = _dsn.GetAllByNama(keyword);
+               
+            }
+            return View("Index",data);   
+        }
 
         public IActionResult Create(){
             return View();
