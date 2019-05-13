@@ -1,0 +1,49 @@
+@model ASPCoreGroupB.Models.Dosen;
+
+@{
+    Layout="_Layout";
+}
+
+<h2>Form Tambah Dosen</h2>
+<a asp-action="Index" class="btn btn-success btn-xs">Tampil Data</a> <br><br>
+<div class="row">
+@if(ViewData["pesan"]!=null){
+    @Html.Raw(ViewData["pesan"])
+}
+<br/><br/>
+</div>
+
+
+<div class="col-md-6">
+    <form asp-action="CreatePost">
+        <div asp-validation-summary="ModelOnly" class="text-danger" />
+        <div class="form-group">
+            <label asp-for="Nik">Nik</label>
+            <input asp-for="Nik" type="text" class="form-control" />
+            <span asp-validation-for="Nik" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Nama">Nama</label>
+            <input asp-for="Nama" type="text" class="form-control" />
+            <span asp-validation-for="Nama" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Alamat">Alamat</label>
+            <input asp-for="Alamat" type="text" class="form-control" />
+            <span asp-validation-for="Alamat" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" type="text" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+@section Script{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
